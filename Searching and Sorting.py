@@ -40,34 +40,37 @@ n = len(nums)
 #     nums[i] = nums[ind]
 #     nums[ind]=temp
 
-# Merge Sort
-def merge(nums,l,mid,r):
-        a=nums[l:mid+1]
-        b=nums[mid+1:r+1]
-        i,j,k=0,0,l
-        while k <= r:
-            if j==len(b):
-                nums[k] = a[i]
-                i += 1
-                k += 1
-            elif i==len(a):
-                nums[k] = b[j]
-                j += 1
-                k += 1
-            elif a[i] < b[j]:
-                nums[k] = a[i]
-                i+=1
-                k+=1
-            else:
-                nums[k]=b[j]
-                j+=1
-                k+=1
-def merge_sort(nums,l,r):
-    if l>=r:
-        return
-    mid = (l+r)//2
-    merge_sort(nums,l,mid)
-    merge_sort(nums,mid+1,r)
-    merge(nums,l,mid,r)
-merge_sort(nums,0,len(nums)-1)
-print(nums)
+# # Merge Sort
+# def merge(nums,l,mid,r):
+#         a=nums[l:mid+1]
+#         b=nums[mid+1:r+1]
+        # i,j,k=0,0,l
+        # while k <= r:
+        #     if j==len(b):
+        #         nums[k] = a[i]
+        #         i += 1
+        #         k += 1
+        #     elif i==len(a):
+        #         nums[k] = b[j]
+        #         j += 1
+        #         k += 1
+        #     elif a[i] < b[j]:
+#                 nums[k] = a[i]
+#                 i+=1
+#                 k+=1
+#             else:
+#                 nums[k]=b[j]
+#                 j+=1
+#                 k+=1
+# def merge_sort(nums,l,r):
+#     if l>=r:
+#         return
+#     mid = (l+r)//2
+#     merge_sort(nums,l,mid)
+#     merge_sort(nums,mid+1,r)
+#     merge(nums,l,mid,r)
+# merge_sort(nums,0,len(nums)-1)
+# print(nums)
+
+# Quick Sort
+def partition()
