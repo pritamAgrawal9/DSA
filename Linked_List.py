@@ -49,3 +49,20 @@ for i in range(ind-1): # i = 0 1 2
 d.next = curr.next
 curr.next = d
 printLL(head)
+print()
+# Deletion in linked list
+# 1. deletion of head
+# head = head.next
+
+# 2. deletion of last node
+curr2 = head
+# while curr2.next.next!=None:
+#     curr2 = curr2.next
+# curr2.next = None
+# printLL(head)
+
+# 3. deletion of node at a given index
+for j in range(ind-1):
+    curr2 = curr2.next
+curr2.next = curr2.next.next
+printLL(head)
